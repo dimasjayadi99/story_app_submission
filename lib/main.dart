@@ -5,6 +5,7 @@ import 'package:submission_story_app/provider/add_story_provider.dart';
 import 'package:submission_story_app/provider/detail_story_provider.dart';
 import 'package:submission_story_app/provider/list_story_provider.dart';
 import 'package:submission_story_app/provider/login_provider.dart';
+import 'package:submission_story_app/provider/logout_provider.dart';
 import 'package:submission_story_app/provider/register_provider.dart';
 import 'package:submission_story_app/routes/route_delegate.dart';
 import 'package:provider/provider.dart';
@@ -20,6 +21,7 @@ void main() async {
     ChangeNotifierProvider(create: (context) => ListStoryProvider()),
     ChangeNotifierProvider(create: (context) => AddStoryProvider()),
     ChangeNotifierProvider(create: (context) => DetailStoryProvider()),
+    ChangeNotifierProvider(create: (context) => LogoutProvider()),
   ], child: const MyApp()));
 }
 
